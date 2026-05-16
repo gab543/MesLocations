@@ -1,0 +1,249 @@
+/* App.css - Composants spécifiques et extraction des styles inline */
+
+/* Boutons utilitaires */
+.btn-nav {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.85rem;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.btn-full-sm {
+  width: 100%;
+  font-size: 0.85rem;
+}
+
+.theme-toggle-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.theme-toggle-btn:hover {
+  color: var(--primary);
+  background-color: var(--surface-alt);
+}
+
+/* Sections utilitaires */
+.section-bg-dark {
+  background: var(--bg);
+}
+
+.section-bg-alt {
+  background: var(--surface-alt);
+}
+
+.section-border-top {
+  border-top: 1px solid var(--border);
+}
+
+/* Simulateur */
+.simulator-wrapper {
+  background: var(--bg);
+}
+
+.simulator-title {
+  font-size: 2.5rem;
+}
+
+.simulator-subtitle {
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+  font-weight: 300;
+}
+
+.simulator-profile-container {
+  margin-bottom: 1rem;
+}
+
+.simulator-profile-label {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+}
+
+.simulator-profile-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent);
+  font-family: 'Playfair Display', serif;
+}
+
+.simulator-count {
+  font-size: 1.25rem;
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+.simulator-slider-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.75rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* Présentation Produit (Split Screen) */
+.presentation-section {
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+}
+
+.presentation-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  align-items: center;
+}
+
+.presentation-content {
+  flex: 1 1 500px;
+}
+
+.presentation-title {
+  text-align: left;
+  font-size: 2.5rem;
+}
+
+.presentation-desc {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+.presentation-list {
+  list-style: none;
+  color: var(--text-main);
+  font-size: 1rem;
+}
+
+.presentation-list-item {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.presentation-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.dashboard-mockup {
+  flex: 1 1 400px;
+  background: var(--surface);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  border: 1px solid var(--border);
+}
+
+.dashboard-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.dashboard-row-bordered {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+.dashboard-label-accent {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.dashboard-label-muted {
+  color: var(--text-muted);
+}
+
+.text-success {
+  color: #4ade80;
+  font-weight: 500;
+}
+
+.text-warning {
+  color: #fbbf24;
+}
+
+/* Mini UIs dans Bento */
+.mock-invoice-success {
+  margin-bottom: 1rem;
+  border-left: 3px solid #4ade80;
+}
+
+.mock-invoice-warning {
+  border-left: 3px solid #fbbf24;
+}
+
+.mock-title {
+  font-size: 0.85rem;
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.mock-subtitle {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.mock-amount-success {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.mock-amount-warning {
+  color: var(--text-muted);
+}
+
+.mock-pdf-badge {
+  padding: 1rem;
+  background: var(--accent-light);
+  border-radius: 0.5rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.fill-muted {
+  background: var(--text-muted);
+}
+
+.mock-docs-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.mock-doc-item {
+  flex: 1;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+/* Footer addition */
+.footer-logo-centered {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
